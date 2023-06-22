@@ -56,11 +56,31 @@ python visualnexus.py
 
 ## Share with Friends
 
-Help us spread awareness about VisualNexus by sharing it on social media:
+Help us spread awareness about VisualNexus by sharing it on various social media platforms:
 
-[![Share on Twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus)](https://twitter.com/intent/tweet?text=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.%20%23VisualNexus%20%23OpenSource%20%23MachineLearning%20%23ComputerVision%20%23DataScience&url=https%3A%2F%2Fgithub.com%
+- [Twitter](https://twitter.com/intent/tweet?text=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.%20%23VisualNexus%20%23OpenSource%20%23MachineLearning%20%23ComputerVision%20%23DataScience&url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus)
 
-2Fkyegomez%2FVisualNexus)
+- [LinkedIn](https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&title=VisualNexus%20-%20Open-Source%20Training%20Pipeline%20for%20Visual%20Dataset%20Segmentation%20and%20Labeling&summary=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.&source=)
+
+- [Facebook](https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus)
+
+- [Reddit](https://www.reddit.com/submit?url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&title=VisualNexus%20-%20Open-Source%20Training%20Pipeline%20for%20Visual%20Dataset%20Segmentation%20and%20Labeling)
+
+- [WhatsApp](https://api.whatsapp.com/send?text=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.%20%23VisualNexus%20%23OpenSource%20%23MachineLearning%20%23ComputerVision%20%23DataScience%0A%0Ahttps%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus)
+
+- [Telegram](https://t.me/share/url?url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&text=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.)
+
+- [Pinterest](https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&description=Check%20out%20VisualNexus%2C%20an%20open-source%20training%20pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.)
+
+- [Email](mailto:?subject=Check%20out%20VisualNexus%20-%20Open-Source%20Training%20Pipeline%20for%20Visual%20Dataset%20Segmentation%20and%20Labeling&body=Hey%21%0A%0ACheck%20out%20VisualNexus%2C%20an%20open-source%20training%20
+
+pipeline%20for%20visual%20dataset%20segmentation%20and%20labeling.%20It%20allows%20you%20to%20efficiently%20segment%20and%20label%20visual%20datasets%20for%20downstream%20model%20training.%20%23VisualNexus%20%23OpenSource%20%23MachineLearning%20%23ComputerVision%20%23DataScience%0A%0Ahttps%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus)
+
+- [Hacker News](https://news.ycombinator.com/submitlink?u=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&t=VisualNexus%20-%20Open-Source%20Training%20Pipeline%20for%20Visual%20Dataset%20Segmentation%20and%20Labeling)
+
+- [Weibo](http://service.weibo.com/share/share.php?url=https%3A%2F%2Fgithub.com%2Fkyegomez%2FVisualNexus&title=VisualNexus%20-%20Open-Source%20Training%20Pipeline%20for%20Visual%20Dataset%20Segmentation%20and%20Labeling&pic=&searchPic=false)
+
+Let's share VisualNexus and help the community benefit from this open-source training pipeline for visual dataset segmentation and labeling!
 
 ## Contributing
 
