@@ -7,6 +7,24 @@ import torch
 import cv2
 import numpy as np
 
+from datasets import load_dataset
+from pathlib import Path
+import os
+
+def load_hf_dataset(dataset_name):
+    #load a dataset from hf dataset library
+    #return s alist of file paths of the images in the dataset
+    dataset = load_dataset(dataset_name)
+    file_paths = []
+
+    for example in dataset['train']:
+        file_path = example['image']
+        file_paths.append(file_path)
+
+        return file_paths
+    
+
+
 class SAG_IMG:
     """
     SAG_IMG: Segment Anything for Image.
@@ -59,11 +77,11 @@ class SAG_IMG:
         Performs the fast process function from FastSAM.utils.tools on the given annotations.
     """
 
-    def __init__(self, dataset_folder, model_path='./weights/FastSAM.pt', imgsz=1024, iou=0.9, text_prompt=None, conf=0.4,
+    def __init__(self, image_file_paths, model_path='./weights/FastSAM.pt', imgsz=1024, iou=0.9, text_prompt=None, conf=0.4,
                  output='./output/', randomcolor=True, point_prompt="[[0,0]]", point_label="[0]", box_prompt="[0,0,0,0]", better_quality=False,
                  device=None, retina=True, withContours=False):
         
-        self.dataset_folder = Path(dataset_folder)
+        self.image_file_paths = image_file_paths
         self.model_path = model_path
         self.imgsz = imgsz
         self.iou = iou
@@ -80,17 +98,13 @@ class SAG_IMG:
         self.withContours = withContours
 
     def segment(self):
-        # load model
+        # Load the YOLO model from the specified path
         model = YOLO(self.model_path)
-        
-        # loop over dataset
-        for img_file in self.dataset_folder.glob("*"):
-            # continue only if it's an image
-            if img_file.suffix.lower() not in [".png", ".jpg", ".jpeg"]:
-                continue
 
-            self.img_path = str(img_file)
-            
+        # Iterate over the list of file paths
+        for img_path in self.image_file_paths:
+            self.img_path = img_path
+            # Process the image with the YOLO model and get the results
             results = model(
                 self.img_path,
                 imgsz=self.imgsz,
@@ -100,7 +114,7 @@ class SAG_IMG:
                 conf=self.conf,
                 max_det=100,
             )
-            
+                
             if self.box_prompt[2] != 0 and self.box_prompt[3] != 0:
                 annotations = self.prompt(results, box=True)
             elif self.text_prompt is not None:
@@ -148,5 +162,7 @@ class SAG_IMG:
 
 
 if __name__ == "__main__":
-    img_seg = SAG_IMG(dataset_folder='./images/')
+    dataset_name="echarlaix/vqa" #dataset name
+    image_file_paths = load_hf_dataset(dataset_name)
+    img_seg = SAG_IMG(image_file_paths)
     img_seg.segment()
