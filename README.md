@@ -94,3 +94,12 @@ We would like to express our gratitude to the open-source community for their in
 ## Contact
 
 Email kye at kye@apac.ai
+
+
+
+# 2 Pipelines
+2 potential pipelines, what do you think? We should make one for robotic datasets
+
+Infinigen -> Segment Anything Video -> Very Rich and Detailed Dataset.
+
+Segment Anything for Image and or Video -> Iterate over Dataset and segment-> Very Rich and Detailed Dataset structured dataset for pretraining?
