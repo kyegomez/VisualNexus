@@ -11,6 +11,10 @@ from datasets import load_dataset
 from pathlib import Path
 import os
 
+from datasets import Dataset
+import pandas as pd
+
+
 def load_hf_dataset(dataset_name):
     #load a dataset from hf dataset library
     #return s alist of file paths of the images in the dataset
@@ -160,9 +164,43 @@ class SAG_IMG:
             output_path=str(output_path),
         )
 
+    def create_dataset(self):
+        """
+        Create a Huggingface dataset from the segmented images and save it to disk.
+        This dataset includes the original image path, segmented image path, and optional text.
+        """
+        # List to store the dataset examples
+        examples = []
+        
+        # Iterate over the output directory
+        for file_name in os.listdir(self.output):
+            if file_name.endswith('.jpg'):  # Assuming segmented images are in jpg format
+                # Construct the original image path
+                image_path = os.path.join(str(Path(self.img_path).parent), file_name)
+
+                # Construct the segmented image path
+                segmented_image_path = os.path.join(str(self.output), file_name)
+
+                # Append the example to the list
+                examples.append({
+                    'image_path': image_path,
+                    'segmented_image_path': segmented_image_path,
+                    'text_prompt': self.text_prompt if self.text_prompt else None,
+                })
+
+        # Convert the list of examples into a pandas DataFrame
+        df = pd.DataFrame(examples)
+
+        # Convert the DataFrame into a Huggingface dataset
+        dataset = Dataset.from_pandas(df)
+
+        # Save the dataset to disk
+        dataset.save_to_disk(os.path.join(str(self.output), 'segmented_dataset'))
+
 
 if __name__ == "__main__":
     dataset_name="echarlaix/vqa" #dataset name
     image_file_paths = load_hf_dataset(dataset_name)
     img_seg = SAG_IMG(image_file_paths)
     img_seg.segment()
+    img_seg.create_dataset()
