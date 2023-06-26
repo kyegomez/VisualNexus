@@ -6,6 +6,12 @@ from models.sag_video import SAG_VID
 import os
 from datasets import load_dataset
 
+def load_hf_dataset(dataset_name):
+    #custom logic
+    pass
+
+
+
 class SAG_MEDIA:
     """
     SAG_MEDIA: Segment Anything for Image and Video.
@@ -81,8 +87,8 @@ class SAG_MEDIA:
 
 if __name__ == "__main__":
     dataset_name = "echarlaix/vqa"  # dataset name
-    image_file_paths = load_dataset(dataset_name)
-    video_file_paths = load_dataset(dataset_name)
+    image_file_paths = load_hf_dataset(dataset_name)
+    video_file_paths = load_hf_dataset(dataset_name)
 
     media_seg = SAG_MEDIA(image_file_paths, video_file_paths)
     media_seg.segment()
