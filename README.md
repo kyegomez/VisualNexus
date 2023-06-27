@@ -1,3 +1,9 @@
+# Agora
+
+![Agora banner](Agora-Banner-blend.png)
+
+[Swarms is brought to you by Agora, the open source AI research organization. Join Agora and Help create swarms and or recieve support to advance Humanity. ](https://discord.gg/qUtxnK2NMf)
+
 # VisualNexus
 
 [![GitHub license](https://img.shields.io/github/license/kyegomez/VisualNexus)](https://github.com/kyegomez/VisualNexus/blob/main/LICENSE)
