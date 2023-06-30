@@ -187,3 +187,12 @@ Email kye at kye@apac.ai
 Infinigen -> Segment Anything Video -> Very Rich and Detailed Dataset.
 
 Segment Anything for Image and or Video -> Iterate over Dataset and segment-> Very Rich and Detailed Dataset structured dataset for pretraining?
+
+
+# Roadmap
+
+* Creaet documentation for all classes
+
+* Create examples for various robotic and other usecases
+
+* Update examples
