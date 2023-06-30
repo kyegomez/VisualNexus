@@ -18,3 +18,7 @@ gradio==3.35.2
 ultralytics == 8.0.120
 
 metaseq
+
+
+
+git+https://github.com/ChaoningZhang/MobileSAM.git

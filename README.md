@@ -22,6 +22,7 @@ To get started with VisualNexus, please follow the introductary instructions bel
 
 ```bash
 git clone https://github.com/kyegomez/VisualNexus.git
+cd VisualNexus
 ```
 
 2. Install the required dependencies:
@@ -178,7 +179,6 @@ We would like to express our gratitude to the open-source community for their in
 ## Contact
 
 Email kye at kye@apac.ai
-
 
 
 # 2 Pipelines
