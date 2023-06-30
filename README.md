@@ -193,6 +193,9 @@ Segment Anything for Image and or Video -> Iterate over Dataset and segment-> Ve
 
 * Creaet documentation for all classes
 
-* Create examples for various robotic and other usecases
+* Create examples for Robotic Vision, Medical Imaging, Autonomous Driving, Satellite Imagery:
+
+
+
 
 * Update examples
