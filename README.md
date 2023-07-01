@@ -184,18 +184,29 @@ Email kye at kye@apac.ai
 # 2 Pipelines
 2 potential pipelines, what do you think? We should make one for robotic datasets
 
-Infinigen -> Segment Anything Video -> Very Rich and Detailed Dataset.
+* Infinigen -> Segment Anything Video -> Very Rich and Detailed Dataset.
 
-Segment Anything for Image and or Video -> Iterate over Dataset and segment-> Very Rich and Detailed Dataset structured dataset for pretraining?
+* Segment Anything for Image and or Video -> Iterate over Dataset and segment-> Very Rich and Detailed Dataset structured dataset for pretraining?
 
+* Video Pipeline [vidoe instruction dataset ](https://llavar.github.io/) -> Segment Anything Video -> Orca-Like explain your reasoning instruction tuning creation -> super SOTA visual pretraining dataset for vision models
+
+* from discord chat in LAION with Christop
+
+```
+*"This looks wonderful
+reclaimer — Today at 7:33 AM
+We could make like an multi modal dataset with images or video dataset like Orca’s where the model explains its multi modal reasoning 
+Christoph — Today at 10:13 AM
+Yes, exactly. Or we take lavar captions and Feed them in GPT 4 to reason based on the Text about the Image contents, the causes, consequeces.... 😉
+reclaimer — Today at 11:41 AM
+We could also sprinkle in video segment anything to show the model the segmentations with detailed reasoning explanations"
+```
 
 # Roadmap
 
 * Creaet documentation for all classes
 
 * Create examples for Robotic Vision, Medical Imaging, Autonomous Driving, Satellite Imagery:
-
-
 
 
 * Update examples
