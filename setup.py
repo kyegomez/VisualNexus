@@ -29,7 +29,7 @@ setup(
     'tqdm>=4.64.0',
     'pandas>=1.1.4',
     'seaborn>=0.11.0',
-    'gradio==3.35.2',
+    'gradio==4.19.2',
     # Ultralytics-----------------------------------
     'ultralytics == 8.0.120',
     'metaseq'
